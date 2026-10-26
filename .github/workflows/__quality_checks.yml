@@ -11,6 +11,8 @@ on:
 jobs:
   dependency-review:
     name: Vulnerable dependencies 🔎
+    # Disabled: dependency review is unsupported on this fork (no dependency graph). Restore per https://github.com/CrunchyMonkies/jellyops/issues/7
+    if: false
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
